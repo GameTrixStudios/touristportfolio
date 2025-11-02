@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Kashmir - Book Your Trip</title>
+  <link rel="stylesheet" href="book.css">
+</head>
+<body>
+  <header>
+    <h1>Explore Kashmir</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="book.html" class="active">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="clickBtn" onclick="window.location.href='book.html'">Click Here To Book Now</button>
+  </header>
+
+  <div class="video-background">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="videos/video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <section class="book">
+    <h2>Book Your Kashmir Adventure</h2>
+    <p>Plan your trip easily by booking cabs and hotels for your favorite destinations.</p>
+
+    <form class="booking-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="destination">Select Destination:</label>
+      <select id="destination" required>
+        <option value="">--Choose a destination--</option>
+        <option>Gulmarg</option>
+        <option>Pahalgam</option>
+        <option>Dal Lake</option>
+        <option>Sonmarg</option>
+        <option>Betaab Valley</option>
+      </select>
+
+      <label for="cab">Cab Type:</label>
+      <select id="cab" required>
+        <option value="">--Select Cab Type--</option>
+        <option>Standard Sedan</option>
+        <option>SUV (4x4)</option>
+        <option>Luxury Car</option>
+      </select>
+
+      <label for="hotel">Hotel Preference:</label>
+      <select id="hotel" required>
+        <option value="">--Select Hotel Type--</option>
+        <option>3-Star</option>
+        <option>4-Star</option>
+        <option>5-Star Luxury</option>
+      </select>
+
+      <label for="date">Travel Date:</label>
+      <input type="date" id="date" required>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Explore Kashmir | Designed by RSSA</p>
+  </footer>
+</body>
+</html>

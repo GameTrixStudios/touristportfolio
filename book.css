@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family: serif;
+}
+
+nav{
+  margin-right: -340px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a.active, nav a:hover {
+  background: #090688;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.book {
+  text-align: center;
+  padding: 40px;
+}
+
+.booking-form {
+  background: white;
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background: #0b3d91;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1459c4;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  font-size: 0.9em;
+  position: relative;
+}
+
+#clickBtn{
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(141, 6, 6);
+  color: white;
+  font-family: monospace;
+  border: none;
+}
+
+#clickBtn:hover{
+  background-color: rgb(228, 228, 51);
+  color: black;
+}
